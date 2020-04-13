@@ -1,0 +1,22 @@
+
+
+<div class="card text-center">
+    <div class="card-header">
+      Campeonato de filmes
+    </div>
+    <div class="card-body">
+        <h5 class="card-title">Resultado Final</h5>
+        <p class="card-text">Veja o resultado final do campeonato de filmes de forma simples e rápida.</p>
+        <div class="input-group mb-3" *ngFor="let filme of campeoes; index as i">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="">{{i + 1}}º</span>
+            </div>
+            <label class="form-control" >{{filme.titulo}}</label>
+        </div>
+        
+    </div>
+    <div class="card-footer text-muted">
+        <a href="#" class="btn btn-primary">Iniciar um novo campeonato</a>
+    </div>
+   
+</div>
